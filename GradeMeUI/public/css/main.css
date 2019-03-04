@@ -117,20 +117,23 @@ section .section-title {
 }
 #footer {
     /* background: #007b5e !important; */
-    background: #000 !important;
+    background: #fff !important;
 }
 #footer p {
-    color:#ffffff;
+    /* color:#ffffff; */
+    color:#000;
 }
 #footer h5{
 	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    border-left: 3px solid rgb(38, 38, 38);
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color:#000;
 }
 #footer a {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color:#000;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -151,10 +154,12 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+    /* color:#ffffff; */
+    color:#000;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+    /* color:#eeeeee; */
+    color:rgb(38, 38, 38);
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
@@ -213,12 +218,52 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    /* background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%; */
     background: url('../imgs/sampleImages/gradeMeHeader1.jpg') no-repeat 50% 50%; 
-    /* background-image: url(../imgs/sampleImages/sample3.jpg); */
     background-size: cover;
 }
+.boost_your_grades{
+    width: 100%!important;
+    background: url('../imgs/sampleImages/feedback.jpg') no-repeat 50% 50%; 
+    background-size: cover;
+    color: #fff;
+    height:50vh;
+  
+    /* position: relative; */
+}
+.about_us_vision_statement{
+    background: url('../imgs/sampleImages/bookstack.jpg') no-repeat 50% 50%; 
+    background-size: cover;
+    color: #fff;
+    height:50vh;
+    width: 100%!important;
+    /* position: relative; */
+}
 
+.login_register{
+    background: url('../imgs/sampleImages/chalkboard2.jpg') no-repeat 50% 50%; 
+    background-size: cover;
+    color: #000;
+    /* height: 500px; */
+    height:100vh;
+    width: 100%!important;
+    /* position: relative; */
+    
+
+}
+/* .login_background{
+    background-color: green;
+    content: '';
+    background-image: linear-gradient(#000,transparent);
+    opacity: .5;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+
+} */
 .content {
     width: 94%;
     margin: 4em auto;
@@ -259,7 +304,7 @@ nav ul {
 }
 
 nav.black ul {
-    background: #000;
+    background: #455D7A;
 }
 
 nav ul li {
