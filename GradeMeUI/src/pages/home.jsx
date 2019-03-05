@@ -18,11 +18,12 @@ class Home extends Component {
   <body>
       <div class = "">
         <div class="login_register">
+        <div class="col-md-4"><h1> Sign In or Join Our Growing Community!</h1></div>
           <div class ="login_background">
             <div class="container">
-              <div class="row">
-                <h2> Login/Register</h2>
-              </div>
+              {/* <div class="row">
+                
+              </div> */}
             </div>
             <br/>
             <br/>
@@ -59,7 +60,7 @@ class Home extends Component {
                           <label>Password</label>
                           <input type="password" name="password"></input>
                           <button type="submit">Join now</button>
-                          <p>By clicking Join now, you agree to hifriends's User Agreement, Privacy Policy, and Cookie Policy.</p>
+                          <p>By clicking Join now, you agree to ReviewMe's User Agreement, Privacy Policy, and Cookie Policy.</p>
                         </form>
                   </div>
               
@@ -74,15 +75,53 @@ class Home extends Component {
         </div>
     
 {/* --------------------------------------------------------------- */}
-
-        <div class="boost_your_grades">
-          <label htmlFor="">Boost your grades</label>
-        </div>
+        
+          <div class="boost_your_grades">
+              <div class="col-md-4"></div>
+              <div class="col-md-4 offset-md-4">
+                <h1>Boost Your Grades</h1>
+                <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+             
+            
+          </div>
+        
+        
       
-
-        <div class="about_us_vision_statement">
-          <label htmlFor="">About Us/ Vision Statement</label>
-        </div>
+        
+          <div class="about_us_vision_statement">
+           
+            <div class = "col-md-4">
+              <h1>About Us / Vision Statement</h1>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        
+        
       
       
       </div>

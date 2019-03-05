@@ -2,7 +2,8 @@ body{
     background:#efefef;
 }
 .form-body{
-    background:#fff;
+	/* background:#fff; */
+	background:#000;
     padding:20px;
 }
 .login-form{

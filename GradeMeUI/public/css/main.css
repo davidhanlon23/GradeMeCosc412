@@ -223,26 +223,28 @@ header {
 }
 .boost_your_grades{
     width: 100%!important;
-    background: url('../imgs/sampleImages/feedback.jpg') no-repeat 50% 50%; 
+    background: url('../imgs/sampleImages/laptopAndGlasses.jpg') no-repeat 50% 50%; 
+   
     background-size: cover;
     color: #fff;
-    height:50vh;
+    height:100vh;
   
     /* position: relative; */
 }
+
 .about_us_vision_statement{
     background: url('../imgs/sampleImages/bookstack.jpg') no-repeat 50% 50%; 
     background-size: cover;
     color: #fff;
-    height:50vh;
+    height:100vh;
     width: 100%!important;
     /* position: relative; */
 }
 
 .login_register{
-    background: url('../imgs/sampleImages/chalkboard2.jpg') no-repeat 50% 50%; 
+    background: url('../imgs/sampleImages/ipadAndBooks.jpg') no-repeat 50% 50%; 
     background-size: cover;
-    color: #000;
+    color: #fff;
     /* height: 500px; */
     height:100vh;
     width: 100%!important;
@@ -250,20 +252,20 @@ header {
     
 
 }
-/* .login_background{
-    background-color: green;
+ /* .photo_dimmer{
+    
     content: '';
     background-image: linear-gradient(#000,transparent);
     opacity: .5;
     z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 400px;
+    height: 50vh;
+    width:100%;
 
-} */
+}
+.photo_dimmer a p h1 h2 h3 h4 h5{
+    opacity:1;
+   
+}  */
 .content {
     width: 94%;
     margin: 4em auto;
@@ -305,8 +307,8 @@ nav ul {
 }
 
 nav.black ul {
-    background: #455D7A;
-    /* background:#fff; */
+    /* background: #455D7A; */
+    background:#000;
    
 }
 
