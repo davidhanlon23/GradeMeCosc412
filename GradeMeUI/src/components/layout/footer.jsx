@@ -40,9 +40,9 @@ const Footer = () => {
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="https://www.facebook.com/Bullettsink/"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
 						
-						<li class="list-inline-item"><a href="https://www.instagram.com/explore/locations/214449204/bullets-ink?hl=en"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
 
 					</ul>
 				</div>
