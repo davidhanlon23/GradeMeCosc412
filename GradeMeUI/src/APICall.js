@@ -15,7 +15,7 @@ class APICall extends Component {
   }
 
   fetchData = () => {
-    fetch('http://localhost:4000/getreservation') // Your URL here example) http://localhost:4000/artists
+    fetch('http://localhost:4000/') // Your URL here example) http://localhost:4000/artists
       .then(response => response.json())
       .then(parsedJSON => console.log('data:', parsedJSON))
       .catch(err => console.log('Error', err));

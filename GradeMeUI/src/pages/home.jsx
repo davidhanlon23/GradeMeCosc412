@@ -5,8 +5,6 @@ import React, { Component } from 'react';
 //import Header from '../../components/layout/header';
 
 
-const MY_API = 'AIzaSyCftvFVQlonprlXUmTKhLMTGba1eNiiidA'
-let _url = `https://www.google.com/maps/embed/v1/place?key=${MY_API}&q=39.363312,-77.162910`
 
 class Home extends Component {
 
