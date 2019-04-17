@@ -8,14 +8,67 @@ import React, { Component } from 'react';
 
 class Home extends Component {
 
+//    confirmPassword(){
+//     // var x = document.forms["registerForm"]["password"].value;
+//     // var y = document.forms["registerForm"]["confirmPassword"].value;
+    
+//     var x = document.getElementById('password').value;
+//     var y = document.getElementById('confirmPassword').value; 
+//      if (x != y) { 
+//         alert("Ensure Passwords Match");
+    
+//         return false; 
+        
+//      }
+//      else{
+//          return true;
 
+//      }
+       
+// } 
+ confirmPassword(){
+  // var x = document.forms["registerForm"]["password"].value;
+  // var y = document.forms["registerForm"]["confirmPassword"].value;
+  var x = document.getElementById('password').value;
+  var y = document.getElementById('confirmPassword').value; 
+   if (x != y) { 
+      alert("Ensure Passwords Match");
+  
+      return false; 
+      
+   }
+   else{
+       return true;
+
+   }
+     
+}
+findNull(){
+  var str,
+  element = document.getElementById('password');
+  if (element != null) {
+    str = element.value;
+  }
+  else {
+    str = null;
+  }
+}
+goToBoost(){
+  document.getElementById('boost_your_grades').scrollIntoView();
+}
+goToLogin(){
+  document.getElementById('login_register').scrollIntoView();
+}
+goToAbout(){
+  document.getElementById('about_us_vision_statement').scrollIntoView();
+}
   render() {
     return (
 
    /* Changed main, to body... Messed up main cover IMG */ 
   <body>
       <div class = "">
-        <div class="login_register">
+        <div class="login_register" id="login_register">
         <div class="col-md-4"><h1> Sign In or Join Our Growing Community!</h1></div>
           <div class ="login_background">
             <div class="container">
@@ -42,7 +95,7 @@ class Home extends Component {
                         <label>Password</label>
                         <input type="password" name="password"></input>
                         <button type="submit">Sign In</button>
-                        <a href="">Forgot Password?</a>
+                        <a id="forgotPassword" href="">Forgot Password?</a>
                       </form>
                     </div>
               
@@ -50,16 +103,51 @@ class Home extends Component {
                     </div>
                   <div id="sectionB" class="tab-pane fade">
                   <div class="innter-form">
-                        <form class="sa-innate-form" method="post">
-                          <label>Name</label>
-                          <input type="text" name="username"></input>
-                          <label>Email Address</label>
-                          <input type="text" name="username"></input>
-                          <label>Password</label>
-                          <input type="password" name="password"></input>
-                          <button type="submit">Join now</button>
-                          <p>By clicking Join now, you agree to ReviewMe's User Agreement, Privacy Policy, and Cookie Policy.</p>
+                        <form class="sa-innate-form" method="post" name="registerForm"   action="/users" onSubmit= {this.findNull()}>
+                          <div>
+                            <label>First Name</label>
+                            <input type="text" name="firstName" required></input>
+                          </div>
+
+                          <div>
+                            <label>Last Name</label>
+                            <input type="text" name="lastName" required></input>
+                          </div>
+                         
+                          <div>
+                            <label for="reviewee">User Role</label>
+                            <div class="userRole" required>
+                              <input id="reviewee" type="radio" name="role" value="Reviewee" checked="checked" id="reviewee" />
+                              <label for="reviewee">Reviewee</label>
+
+                              <input id="reviewer"type="radio" name="role" value="Reviewer" id="reviewer" />
+                              <label for="reviewer">Reviewer</label>
+                            </div>
+                          </div>
+
+                          <div>
+                            <label>Email Address</label>
+                            <input type="text" name="email" required></input>
+                          </div>
+                        
+                          <div>
+                            <label>Password</label>
+                            <input type="password" name="password" id="password" required></input>
+                          </div>
+                        
+                          <div>
+                            <label>Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required></input>
+                          </div>
+                         
+                          <div>
+                            {/* <button id="joinNow" value="Join Now" type="submit">Join now</button> */}
+                            <input id="joinNow" type="submit" value="Join now" />
+                            <p>By clicking Join now, you agree to ReviewMe's User Agreement, Privacy Policy, and Cookie Policy.</p>
+                          </div>
                         </form>
+                        {/* <a href="#boost_your_grades">boost your grades</a>
+                        <input type="button" onClick={this.goToBoost}/> */}
                   </div>
               
                   </div>
@@ -74,7 +162,7 @@ class Home extends Component {
     
 {/* --------------------------------------------------------------- */}
         
-          <div class="boost_your_grades">
+          <div class="boost_your_grades" id="boost_your_grades">
               <div class="col-md-4"></div>
               <div class="col-md-4 offset-md-4">
                 <h1>Boost Your Grades</h1>
@@ -99,7 +187,7 @@ class Home extends Component {
         
       
         
-          <div class="about_us_vision_statement">
+          <div class="about_us_vision_statement" id="about_us_vision_statement">
            
             <div class = "col-md-4">
               <h1>About Us / Vision Statement</h1>
@@ -133,4 +221,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Home; 

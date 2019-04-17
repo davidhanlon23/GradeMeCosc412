@@ -244,15 +244,31 @@ header {
 .login_register{
     background: url('../imgs/sampleImages/ipadAndBooks.jpg') no-repeat 50% 50%; 
     background-size: cover;
-    color: white;
+    color: black;
     /* height: 500px; */
     height:100vh;
     width: 100%!important;
     /* position: relative; */
 }
+.login_register label, h1{
+    color:white;
+}
+#forgotPassword{
+    margin-left:10px;
+}
+#reviewee{
+    margin-right:5px;
+}
+#reviewer{
+    margin-left:10px;
+    margin-right:5px;
+}
+/* .login_register input{
+    color:black;
+}
 .login_register h1{
     color:White;
-}
+} */
  /* .photo_dimmer{
     
     content: '';
